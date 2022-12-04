@@ -25,22 +25,18 @@
 	width: 90%;
 	background-color: var(--main-color);
 }
-
 /* .progress-bar-list .progress > .bar-1 {
 	height: 6px;
 	width: 90%;
-	background-color: var(--main-color);
-}
+	background-color: var(--main-color);}
 .progress-bar-list .progress > .bar-2 {
 	height: 6px;
 	width: 80%;
-	background-color: var(--main-color);
-}
+	background-color: var(--main-color);}
 .progress-bar-list .progress > .bar-3 {
 	height: 6px;
 	width: 50%;
-	background-color: var(--main-color);
-}
+	background-color: var(--main-color);}
     optimizuojam(pasak destytojo vienintelis 
     optimalus) koda aprasant index.html 
     progress->bar inline style */
