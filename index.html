@@ -40,8 +40,10 @@
 		<link rel="stylesheet" href="./css/3rd-party/font-awesome.min.css" />
 		<!-- components -->
 		<link rel="stylesheet" href="./css/components/clock.css" />
+		<link rel="stylesheet" href="./css/components/form.css" />
 		<link rel="stylesheet" href="./css/components/mouse.css" />
 		<link rel="stylesheet" href="./css/components/progress-bar.css" />
+		<link rel="stylesheet" href="./css/components/button.css" />
 		<!-- pages -->
 		<link rel="stylesheet" href="./css/pages/home.css" />
 	</head>
@@ -131,6 +133,45 @@
 						earum laboriosam fugiat, sit voluptatem consequuntur quo nulla
 						facere dolores? Perferendis.
 					</p>
+					<form action="/">
+						<!-- nuoroda kur bus submitinama -->
+						<div class="cell-1">
+							<label for="name"> Name </label>
+							<input
+								id="name"
+								name="name"
+								type="text"
+								placeholder="Type your name"
+								required
+							/>
+						</div>
+
+						<div class="cell-1">
+							<label for="email"> Email </label>
+							<input
+								id="email"
+								name="email"
+								type="email"
+								placeholder="Your email address"
+								required
+							/>
+						</div>
+
+						<div class="cell-2">
+							<label for="message"> Message </label>
+							<textarea
+								id="message"
+								name="message"
+								placeholder="Write messeage here"
+								required
+							>
+							</textarea>
+						</div>
+
+						<div class="cell-2">
+							<button class="btn">Send message</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</section>
