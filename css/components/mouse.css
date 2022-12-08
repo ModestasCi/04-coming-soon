@@ -1,0 +1,52 @@
+.mouse {
+	font-size: 3px;
+	width: 10em;
+	height: 15em;
+	border: 1em solid #fff;
+	border-radius: 5em;
+	position: relative;
+}
+
+.mouse::before {
+	content: "";
+	display: block;
+	width: 1.2em;
+	height: 2em;
+	position: absolute;
+	top: 2.5em;
+	left: 50%;
+	transform: translateX(-50%); /* tevinio elemento geometrinis centras */
+	background-color: red;
+	animation-name: scroll;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+
+	/* position: absolute;
+	top: 2.5em;
+	left: 3.5em;
+    lygu kaip 
+    transform: translateX(-50%); */
+}
+
+@keyframes scroll {
+	0% {
+		top: 2.5em;
+		/* width: 20px;
+		height: 30px;
+		background-color: pink; baliono pvz */
+	}
+	/* 33% {
+		top: 50px;
+		width: 60px;
+		height: 50px;
+	}
+	50% {
+		background-color: red;
+	} baliono pvz */
+	100% {
+		top: 9.5em;
+		/* width: 20px;
+		height: 30px;
+		background-color: yellow; baliono pvz */
+	}
+}
