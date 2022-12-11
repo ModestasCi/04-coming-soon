@@ -2,21 +2,41 @@
 	/* pamatinis stilius */
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 	font-style: italic;
-	font-size: 20px;
 }
 
 form {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
+		grid-template-areas:
+		'name email'
+		'msg msg'
+		'btn btn';
 }
-
+/* 
 form > .cell-1 {
 	grid-column: span 1;
 }
-
 form > .cell-2 {
 	grid-column: span 2;
+} */
+
+form > div:nth-child(1) {
+	grid-area: name;
+}
+
+form > div:nth-child(2) {
+	grid-area: email;
+}
+
+form > div:nth-child(3) {
+	grid-area: msg;
+}
+
+form > div:nth-child(4) {
+	grid-area: btn;
+	display: grid;
+	justify-content: end;
 }
 
 form > div > label {
@@ -42,8 +62,11 @@ form > div > textarea {
 @media (max-width: 1000px) {
 	form {
 		grid-template-columns: 1fr;
+			grid-template-areas:
+		'name'  /* su grid area pasakoma i kuria */
+		'msg'     /* cell nugulti, kaip excelyje */
+		'email'
+		'btn';
 	}
-	form > .cell-2 {
-		grid-column: span 1;
-	}
+	/* form > .cell-2 {grid-column: span 1;} */
 }
