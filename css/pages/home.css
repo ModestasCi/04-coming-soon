@@ -1,7 +1,7 @@
 .container.hero {
 	min-height: 100vh;
 	background-image: url(../../img/background.webp);
-	background-color: red;
+	background-color: blue;
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: cover;
@@ -146,3 +146,57 @@ footer.container > .row {
 		display: none;
 	}
 }
+
+
+/* .short-row > form {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+	grid-template-areas:
+		'email'
+		'btn';
+}
+
+.short-row > form > div:nth-child(1) {
+	grid-area: email;
+	width: 100%;
+	padding: 0.5em 0.1em;
+	font-size: 18px;
+	line-height: 1.2em;
+	border: none;
+	border-bottom: 2px solid #ccc;
+}
+.short-row > form > div:nth-child(2) {
+	grid-area: btn;
+	display: grid;
+	justify-content: center;
+}
+
+.short-row > form > div > input{
+	width: 100%;
+	padding: 0.5em 0.1em;
+	font-size: 18px;
+	line-height: 1.2em;
+	border: none;
+	border-bottom: 2px solid #ccc;
+}
+
+.short-row > form > .btn {
+    display: inline-block;
+    width: auto;
+    padding: 1em;
+    background-color: var(--secondary-color);
+    color: black;
+    font-size: 18px;
+    line-height: 1em;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s;
+}
+.short-row > form > .btn:hover {
+    box-shadow: 0 3px 6px #0003;
+    opacity: 1;
+} */

@@ -8,7 +8,7 @@ form {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
-		grid-template-areas:
+	grid-template-areas:
 		'name email'
 		'msg msg'
 		'btn btn';
@@ -62,7 +62,7 @@ form > div > textarea {
 @media (max-width: 1000px) {
 	form {
 		grid-template-columns: 1fr;
-			grid-template-areas:
+		grid-template-areas:
 		'name'  /* su grid area pasakoma i kuria */
 		'msg'     /* cell nugulti, kaip excelyje */
 		'email'

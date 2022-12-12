@@ -75,6 +75,15 @@
 						<div class="label">Seconds</div>
 					</div>
 				</div>
+				<form action="/">
+					<div class="cell-5">
+						<label for="email"> Type your email </label>
+						<input id="email" name="email" type="email" placeholder="Type your email" required>
+					</div>
+					<div class="cell-6">
+						<button class="btn">Subscribe now</button>
+					</div>
+				</form>
 				<div class="mouse">
 				</div>
 			</div>
@@ -134,39 +143,21 @@
 						earum laboriosam fugiat, sit voluptatem consequuntur quo nulla
 						facere dolores? Perferendis.
 					</p>
-					<form action="/">
+					<form action="/"> <!-- action-formos siuntimo nuoroda, kai bus serveris. gali buti papildomu atributu, priklausomai nuo backendo  -->
 						<!-- nuoroda kur bus submitinama -->
 						<div class="cell-1">
 							<label for="name"> Name </label>
-							<input
-								id="name"
-								name="name"
-								type="text"
-								placeholder="Type your name"
-								required
-							/>
+							<input id="name" name="name" type="text" placeholder="Type your name" required>
 						</div>
 
 						<div class="cell-1">
 							<label for="email"> Email </label>
-							<input
-								id="email"
-								name="email"
-								type="email"
-								placeholder="Your email address"
-								required
-							/>
+							<input id="email" name="email" type="email" placeholder="Your email address" required>
 						</div>
 
 						<div class="cell-2">
 							<label for="message"> Message </label>
-							<textarea
-								id="message"
-								name="message"
-								placeholder="Write messeage here"
-								required
-							>
-							</textarea>
+							<textarea id="message" name="message" placeholder="Message" required></textarea>
 						</div>
 
 						<div class="cell-2">
